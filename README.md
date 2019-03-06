@@ -22,6 +22,7 @@ This will return the rate of the introduced currency.
 
 * ### Convert
 This command will make a money conversion of a certain amount of money in euros to the introduced currency.
+
 All you have to do is type: 
 ```
 node money-converter.js convert --to CURRENCY
@@ -30,6 +31,7 @@ It will ask you for the amount of **euros** that you have, and make the conversi
 
 * ### Inter
 This command will make a money conversion of certain amount of money from any introduced currency to another one.
+
 All you have to do is type: 
 ```
 node money-converter.js inter --from CURRENCY_1 --to CURRENCY_2
@@ -38,6 +40,7 @@ node money-converter.js inter --from CURRENCY_1 --to CURRENCY_2
 
 * ### Historical
 This command will compare the value of your money at some point in the past to its actual value.
+
 All you have to do is type the following:
 ```
 node money-converter.js historical --from CURRENCY --date YYYY-MM-DD
