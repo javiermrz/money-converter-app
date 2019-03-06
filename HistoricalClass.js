@@ -65,7 +65,7 @@ class Historical {
       (this.actualCurrenciesList.rates[this.actualCurrency] -
         this.pastCurrenciesList.rates[this.actualCurrency]);
     console.log(
-      "The difference in value of your money one week ago compared to the actuall value is " +
+      "The difference in value of your money at the time introduced compared to the actuall value is " +
         difference
     );
   }

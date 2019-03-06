@@ -4,6 +4,7 @@ const fs = require("fs");
 var rp = require("request-promise");
 var rate = require("./RateClass.js");
 var convert = require("./ConvertClass.js");
+var inter = require("./InterClass.js");
 var historical = require("./HistoricalClass.js");
 
 var argv = require("yargs")
@@ -11,7 +12,7 @@ var argv = require("yargs")
   .command("rate", "Gets money exchange rate")
   .command("convert", "Converts from EURO to other currency")
   .command("inter", "Converts from any currency to another one")
-  .command(
+  .command( 
     "historical",
     "Compares the value of your money at some point in the past to its actual value"
   )
@@ -39,7 +40,6 @@ switch (command) {
     convert.executeCommand();
     break;
   case "inter":
-    var inter = require("./InterClass.js");
     inter.actualCurrency = argv.from;
     inter.finalCurrency = argv.to;
     inter.executeCommand();
@@ -52,3 +52,5 @@ switch (command) {
   default:
     handleInvalidCommand();
 }
+
+function handleInvalidCommand(){console.log('You didnt introduce a valid command\n')}
