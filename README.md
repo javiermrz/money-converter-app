@@ -5,6 +5,6 @@ different **currencies rates** and **conversions** in **real time** (information
 API).
 
 ### How do you use it?
-The first thing you should do is type ~~node money-converter.js~~ --help in your console.
+The first thing you should do is type `~~node money-converter.js~~` --help in your console.
 You will then be able to read all the necessary information to manage the app.
 
