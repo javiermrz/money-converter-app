@@ -2,6 +2,9 @@
 
 const fs = require("fs");
 var rp = require("request-promise");
+var rate = require("./RateClass.js");
+var convert = require("./ConvertClass.js");
+var historical = require("./HistoricalClass.js");
 
 var argv = require("yargs")
   .usage("$0 <cmd> [args]")
@@ -28,12 +31,10 @@ var finalCurrency = argv.to;
 
 switch (command) {
   case "rate":
-    var rate = require("./RateClass.js");
     rate.finalCurrency = argv.to;
     rate.executeCommand();
     break;
   case "convert":
-    var convert = require("./ConvertClass.js");
     convert.finalCurrency = argv.to;
     convert.executeCommand();
     break;
@@ -44,7 +45,6 @@ switch (command) {
     inter.executeCommand();
     break;
   case "historical":
-    var historical = require("./HistoricalClass.js");
     historical.actualCurrency = argv.from;
     historical.date = argv.date;
     historical.executeCommand();
