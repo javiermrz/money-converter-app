@@ -5,10 +5,14 @@ different **currencies rates** and **conversions** in **real time** (information
 API).
 
 ### How do you use it?
-The first thing you should do is type 
+The first thing you should do is type the following in your console:
 ```
 node money-converter.js --help 
 ```
-in your console.
 You will then be able to read all the necessary information to manage the app.
+However, keep reading to know exactly how each of the commands works!
+
+* ### Rate
+This command is very symple. All you have to do is type ```node money-converter.js rate --to CURRENCIE``` 
+being **CURRENCIE** an existing currencie such as *AUD* or *USD*.
 
