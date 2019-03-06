@@ -34,6 +34,5 @@ All you have to do is type:
 ```
 node money-converter.js inter --from CURRENCY_1 --to CURRENCY_2
 ``` 
-**CURRENCY_1** should be the currency in which you have your money at the moment, and **CURRENCY_2** the currency
-to which you want to make the conversion.
+**CURRENCY_1** should be the currency in which you have your money at the moment, and **CURRENCY_2** the currency you want to make the conversion to.
 
