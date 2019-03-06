@@ -17,5 +17,14 @@ This command is very symple. All you have to do is type the following:
 ```
 node money-converter.js rate --to CURRENCIE
 ``` 
-being **CURRENCIE** an existing currencie such as *AUD* or *USD*.
+being **CURRENCIE** an existing currencie such as *AUD* or *USD*. 
+This will return the rate of the introduced currency.
+
+* ### Convert
+This command will make a money conversion from certain amount of money to the introduced currency.
+All you have to do is type: 
+```
+node money-converter.js convert --to CURRENCIE
+``` 
+It will ask you for the amount of **Euros** that you have, and make the conversion afterwards.
 
