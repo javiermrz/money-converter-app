@@ -22,6 +22,7 @@ This will return the rate of the introduced currency.
 
 * ### Convert
 This command will make a money conversion of a certain amount of money in euros to the introduced currency.
+
 All you have to do is type: 
 ```
 node money-converter.js convert --to CURRENCY
